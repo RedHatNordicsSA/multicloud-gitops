@@ -12,3 +12,37 @@ main:
 
   multiSourceConfig:
     enabled: true
+
+ldap:
+  bindDN: "uid=aap_ldap,cn=sysaccounts,cn=etc,dc=cool,dc=lab"
+  url: "ldaps://rh-idm-01.cool.lab"
+  groupsBaseDN: "cn=groups,cn=accounts,dc=cool,dc=lab"
+  usersBaseDN: "cn=users,cn=accounts,dc=cool,dc=lab"
+  ca_crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIEgjCCAuqgAwIBAgIBATANBgkqhkiG9w0BAQsFADAzMREwDwYDVQQKDAhDT09M
+    LkxBQjEeMBwGA1UEAwwVQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTIyMDEwNTEz
+    MjA1MloXDTQyMDEwNTEzMjA1MlowMzERMA8GA1UECgwIQ09PTC5MQUIxHjAcBgNV
+    BAMMFUNlcnRpZmljYXRlIEF1dGhvcml0eTCCAaIwDQYJKoZIhvcNAQEBBQADggGP
+    ADCCAYoCggGBANhvBhWj5qQWpvO6h6yDvCKhc/Nj36xZN1990L2PGL6dJU2SoOuo
+    xxIkpFyr3l9ghH9XzBmsyLRSnZM2bEPEHjxChq7GaPyI/OnO/SbLI/zbDJfpovx2
+    nNmHjav4tBLPB+6RkLOwKBC36l8nUpLJuWVfhgpcw+4BTno5anhxJ7y47XI2kmqi
+    orS3TNVjEdXCCRugsTu4rm1ujIju19+gWgjNuIHAACbwU+lUykkwBkKz7pA5ihPO
+    qjJcvxaDXiMPhoMO5d/MkY7X9YeW1X18OVg7opebGSTpIouLiHiwxWFwafVJe4zk
+    TlJarSA4HU3N+wiBrTzyZeId7JVjQKMxtI29ZT3N0rJfcMx35QZCoJkCCVVwndlK
+    NHGFnMh/bBDFh9qoooCyXiW/NdqCsD0lZHcmuuISERJWCIbkH0bmu2GoIkpKIqV7
+    q2Lho8Sx9y4lY1clpaXH/9FfNrzx1VEC02d1KVrL6fssWhbajncrnTS5nIp9fIZ7
+    uiYmIatCD3NQuQIDAQABo4GgMIGdMB8GA1UdIwQYMBaAFChf1oubHtNH+1nFwJGg
+    g6C7LtS5MA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgHGMB0GA1UdDgQW
+    BBQoX9aLmx7TR/tZxcCRoIOguy7UuTA6BggrBgEFBQcBAQQuMCwwKgYIKwYBBQUH
+    MAGGHmh0dHA6Ly9pcGEtY2EuY29vbC5sYWIvY2Evb2NzcDANBgkqhkiG9w0BAQsF
+    AAOCAYEAFVXEwE2cgzpI52DEc9+1bATmjUM2/K6onmSH7rSubkCBUDdfqKGdDHZy
+    g6a3jeJaRIWQpkELHVuOM3tjnx7Ppi9x4p6Z/9AhEd3cl3rxWpNUjm36tnVNKK5z
+    jDdxfytafxyLt1fDwX40fs/ZyaMW3MJ9pyRuBHclKJee7bhxsbP6wQvxE6uj2KAi
+    wT3rZqNXB8wR9R1+Ni8HydfsZKLF0lKa/GsvRxFAwRGLwXzMbIy9h4nAEWFwq3pt
+    cY+wTwgHHgeAUf7bBMztkOLaViNI/jHNSW2jOo5g5tU+QVantKSsuBQwuF2s5yKI
+    4eh7NF/6vFaqhl6ePPQFzdHtAXBuL4lcVhLZeGdtNFJDHhY5/39rjOX1hvLCkZA6
+    Fu9Z/1zuybiCYs5K3RI6ENDHTI5K3btvZgRr3eZAoEbtqd+vNf+Xdcb5lGVx05zX
+    qmXlk4swUk58EpzUzSJuLZTE49i6HGyl2MWrm0nVvpmTogkTqGAP0D2ye+NNmUct
+    GdY7SW/+
+    -----END CERTIFICATE-----
