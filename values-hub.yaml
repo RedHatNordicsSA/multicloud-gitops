@@ -81,7 +81,8 @@ clusterGroup:
       project: hello-world
       path: charts/all/hello-world
 
-    name: ldap-sync
+    ldap-sync:
+      name: ldap-sync
       namespace: ldap-sync
       project: ldap-sync
       path: charts/all/ldap-sync
